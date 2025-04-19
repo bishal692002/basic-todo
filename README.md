@@ -1,9 +1,23 @@
-## Hi there
 
-This project contains a simple TODO applications
-It has the following features-
--Anyone can create a todo.
--Anyone can see their existing todos.
--Anyone can mark a todo as done.
 
+## 📝 Project Overview - Todo App
+
+### 🧠 Tech Stack
+
+**Backend:**
+- `Express.js` – for handling server-side routes and logic
+- `Zod` – for request validation
+- `Mongoose` – for connecting to MongoDB
+- `MongoDB` – as the primary database
+
+**Frontend:**
+- Built using `React` (with Vite)
+- Two main components:
+  1. `CreateTodo` – to add new tasks
+  2. `RenderTodos` – to display existing tasks
+  3. `TodosCss` - basic CSS used for layout and styling
+
+### 📁 Project Structure
+- Top-level `README.md` file for documentation
+- Source code version-controlled and pushed to `GitHub`
 

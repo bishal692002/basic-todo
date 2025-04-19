@@ -1,0 +1,90 @@
+.todos-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.todo-item.completed {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4caf50;
+    opacity: 0.9;
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+.todo-item.completed .todo-title,
+.todo-item.completed .todo-description {
+    color: #7f8c8d;
+}
+
+.todo-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.todo-title.completed {
+    color: #4caf50;
+    text-decoration: line-through;
+}
+
+.todo-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.complete-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.complete-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.complete-button.completed {
+    background-color: #4caf50;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.complete-button.completed:hover {
+    background-color: #4caf50;
+    transform: none;
+}
+
+/* Add animation for completed todos */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
