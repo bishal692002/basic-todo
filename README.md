@@ -1,6 +1,6 @@
 
 
-## 📝 Project Overview - Todo App
+## 📝 Project Overview - Todo App.
 
 ### 🧠 Tech Stack
 
